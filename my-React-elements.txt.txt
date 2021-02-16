@@ -1,0 +1,49 @@
+import React from "react";
+import "./styles.css";
+
+
+export default function App() {
+  return (
+    <div className="App">
+      <h1>Hello CodeSandbox</h1>
+      <h2>Start editing to see some magic happen!</h2>
+      Here is a list:
+    <ol>
+      <li>Node.js</li>
+      <li>MongoDB</li>
+      <li>Express.js</li>
+      <li>React.js</li>
+    </ol>
+
+    <button
+    type="button"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href=' https://www.hyperiondev.com/';
+      }}
+> Click here</button>
+</div>
+
+
+
+  );
+}
+
+import React from 'react';
+
+class App extends React.Component {
+  state={
+    curTime : new Date().toLocaleString(),
+  }
+  render(){
+    return (
+      <div className="App">
+        <p>Current Time : {this.state.curTime}</p>
+      </div>
+    );
+  }
+}
+
+export default App;
+
+
